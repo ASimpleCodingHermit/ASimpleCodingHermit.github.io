@@ -10,7 +10,9 @@
     <title>Joseph Chu | Home</title>
   </head>
   <body>
-    <h1>This is the Home page</h1>
+    {% for post in posts %}
+    <h1>{{ post.title }}</h1>
+    {% endfor %}
     <script src="js/script.js"></script>
   </body>
 </html>
