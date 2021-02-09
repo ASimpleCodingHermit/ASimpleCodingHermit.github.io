@@ -1,0 +1,21 @@
+body {
+  background: #fafafa;
+  color: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444;
+}
+
+.bg-steel {
+  background-color: #2e4f69;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbdbd5;
+}

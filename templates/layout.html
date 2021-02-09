@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta description="Joseph Chu portfolio about me page" />
-    <meta author="" />
+    <meta author="Joseph Chu" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
     <link
@@ -12,9 +12,10 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <!-- Custom CSS and Reset CSS -->
-    <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="static/reset.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }} "
+    />
     {% if title %}
     <title>Joseph Chu | {{ title }}</title>
     {% else %}
@@ -22,18 +23,9 @@
     {% endif %}
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-steel fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/docs/5.0/assets/brand/bootstrap-logo.svg"
-            alt=""
-            width="30"
-            height="30"
-            class="d-inline-block align-top"
-          />
-          LostCode
-        </a>
+    <header class="site-nav">
+      <nav class="navbar navbar-expand-md navbar-light bg-steel">
+        <!-- <a class="navbar-brand mr-4" href="#"> LostCode </a> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -68,11 +60,18 @@
             </li>
           </ul>
         </div>
+      </nav>
+    </header>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">{% block content %} {% endblock content %}</div>
+        <div class="col-md-4">
+          <div class="content-section">
+            <h3>My Sidebar</h3>
+          </div>
+        </div>
       </div>
-    </nav>
-    <div class="container-fluid">
-      {% block content %} {% endblock content %}
-    </div>
+    </main>
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
