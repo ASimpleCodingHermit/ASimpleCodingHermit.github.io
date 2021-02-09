@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta description="Joseph Chu portfolio about me page" />
+    <meta author="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS and Reset CSS -->
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/reset.css" />
+    {% if title %}
+    <title>Joseph Chu | {{ title }}</title>
+    {% else %}
+    <title>Joseph Chu</title>
+    {% endif %}
+  </head>
+  <body>
+    {% block content %} {% endblock content %}
+  </body>
+</html>

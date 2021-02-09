@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta description="Joseph Chu portfolio about me page" />
-    <meta author="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    {% if title %}
-    <title>Joseph Chu | {{ title }}</title>
-    {% else %}
-    <title>Joseph Chu</title>
-    {% endif %}
-  </head>
-  <body>
-    <h1>This is the about me page</h1>
-    <script src="js/script.js"></script>
-  </body>
-</html>
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>About Page</h1>
+{% endblock content %}
