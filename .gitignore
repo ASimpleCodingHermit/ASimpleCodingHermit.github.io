@@ -1,5 +1,2 @@
-.vscode
-__pycache__
 scss
-static/style.css.map
-static/reset.css
+css/style.css.map

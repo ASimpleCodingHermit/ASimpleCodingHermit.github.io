@@ -1,19 +1,20 @@
 .aside .logo a::before {
-  border-top: 4px solid var(--Red);
-  border-left: 4px solid var(--Red);
+  border-top: 4px solid #ec1839;
+  border-left: 4px solid #ec1839;
 }
 .aside .logo a::after {
-  border-bottom: 4px solid var(--Red);
-  border-right: 4px solid var(--Red);
+  border-bottom: 4px solid #ec1839;
+  border-right: 4px solid #ec1839;
 }
 .aside .nav li a:hover,
 .aside .nav li a.active {
-  color: var(--Red);
+  color: #ec1839;
 }
-
+.section-title h2::before,
+.section-title h2::after,
 .aside .nav-toggle span,
 .aside .nav-toggle span::before,
 .aside .nav-toggle span::after,
 .home .intro .social-link a {
-  background-color: var(--Red);
+  background-color: #ec1839;
 }
