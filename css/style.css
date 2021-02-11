@@ -1,0 +1,254 @@
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+/* Root styles */
+:root {
+  /* Background Dark */
+  --BDBDark: #151515;
+  --BDBLight: #222;
+  --BDHeading: #fff;
+  --BDText: #e9e9e9;
+  --BDBorder: #393939;
+
+  /* Background Light */
+  --BLBDark: #f2f2fc;
+  --BLBLight: #fdf9ff;
+  --BLHeading: #302e4d;
+  --BLText: #504e70;
+  --BLLBorder: #e8dfec;
+  --BLDBorder: #d4d4e3;
+
+  /* Fonts */
+  --MjrFont: 'Bungee', cursive;
+  --MnrFont: 'Montserrat Alternatives', sans-serif;
+
+  /* Colors */
+  --Red: #ec1839;
+  --Blue: #2196f3;
+  --Orange: #fa5b0f;
+  --Yellow: #ffb400;
+  --Green: #72b626;
+}
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-size: 16px;
+  font-family: var(--MnrFont);
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  background: var(--BLBDark);
+  min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+}
+
+.main-content {
+  padding-left: 270px;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.shadow-dark {
+  box-shadow: 0 0 20px var(--BLDBorder);
+}
+/* Aside */
+.aside {
+  width: 270px;
+  background: var(--BLBLight);
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-right: 1px solid var(--BLLBorder);
+  padding: 30px;
+}
+
+.aside .logo {
+  padding: 30px 0;
+  font-family: var(--MjrFont);
+}
+
+.aside .logo a {
+  font-size: 30px;
+  color: var(--BLHeading);
+  font-weight: bolder;
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  line-height: 50px;
+}
+
+/* Before  */
+.aside .logo a::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.aside .logo a::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* Aside Navigation */
+.aside .nav-toggle {
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--BLDBorder);
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  background-color: #fff;
+  top: 30px;
+  z-index: 11;
+  border-radius: 5px;
+  background: var(--BLBLight);
+  display: flex;
+  justify-content: center;
+  display: none;
+  align-items: center;
+}
+
+.aside .nav-toggle span {
+  height: 2px;
+  width: 18px;
+  display: inline-block;
+  background: var(--Red);
+  position: relative;
+}
+
+.aside .nav-toggle span::before {
+  content: '';
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  background: var(--Red);
+}
+.aside .nav-toggle span::after {
+  content: '';
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background: var(--Red);
+}
+
+.aside .nav {
+  list-style-type: none;
+  margin: 80px 0;
+  padding: 0;
+}
+
+.aside .nav li {
+  display: block;
+}
+
+.aside .nav li a {
+  font-weight: 600;
+  color: var(--BLHeading);
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 45px;
+  display: block;
+  border-bottom: 1px solid var(--BLLBorder);
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.aside .nav li a:not(.active):hover {
+  padding-left: 5px;
+}
+
+.aside .nav li a .fa {
+  margin-right: 5px;
+}
+
+.aside .copyright-text {
+  font-size: 13px;
+  color: var(--BLText);
+}
+/* Home */
+.home {
+  min-height: 100vh;
+  display: flex;
+}
+
+.home .intro {
+  text-align: center;
+}
+
+.home .intro img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 8px solid #fff;
+}
+
+.home .intro h1 {
+  font-size: 30px;
+  color: var(--BLHeading);
+  font-weight: 600;
+  font-family: var(--MjrFont);
+  margin: 20px 0 10px;
+}
+
+.home .intro p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.home .intro .social-link {
+  margin-top: 25px;
+}
+
+.home .intro .social-link a {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  color: #e8dfec;
+  margin: 0 4px;
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+.home .intro .social-link a:hover{
+  transform: scale(1.1);
+}
