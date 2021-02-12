@@ -280,7 +280,7 @@ a {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .section-title h2 {
@@ -320,11 +320,51 @@ a {
   margin-right: -15px;
   margin-left: -15px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .p-15 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.about .about-content .education {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.about .about-content .experience {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.about .about-content h3.title {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #504e70;
+}
+
+.about .about-content .timeline-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .timeline {
+  background: #fdf9ff;
+  padding: 30px 15px;
+  border: 2px solid #f2f2fc;
+  border-radius: 10px;
+}
+
+.about .about-content .timeline .timeline-date {
+  font-weight: 600;
 }
 
 .about .about-content .about-text {
