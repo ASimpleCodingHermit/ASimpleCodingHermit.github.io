@@ -398,6 +398,21 @@ a {
 }
 
 .about .about-content .skills-info .skill-item {
-  background: #ec1839;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .skills-info .skill-item .progress {
+  background: #e3e3e3;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.about .about-content .skills-info .skill-item .progress-percent {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
