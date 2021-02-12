@@ -257,6 +257,7 @@ button {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%;
+  margin-bottom: 60px;
 }
 
 .section-title h2 {
@@ -264,7 +265,6 @@ button {
   font-family: "Bungee", cursive;
   color: #302e4d;
   font-weight: bolder;
-  background-color: #e8dfec;
   margin: 0;
   position: relative;
 }
@@ -302,5 +302,28 @@ button {
 .p-15 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.about .about-content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text {
+  background: #fff;
+}
+
+.about .about-content .about-text h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #504e70;
+}
+
+.about .about-content .about-text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #504e70;
 }
 /*# sourceMappingURL=style.css.map */
