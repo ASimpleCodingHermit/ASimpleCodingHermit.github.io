@@ -304,15 +304,11 @@ button {
   padding-right: 15px;
 }
 
-.about .about-content {
+.about .about-content .about-text {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   max-width: 100%;
-}
-
-.about .about-content .about-text {
-  background: #fff;
 }
 
 .about .about-content .about-text h3 {
@@ -325,5 +321,23 @@ button {
   font-size: 16px;
   line-height: 24px;
   color: #504e70;
+}
+
+.about .about-content .personal-info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  background-color: #ec1839;
+  margin-top: 40px;
+}
+
+.about .about-content .skills-info {
+  background-color: lightblue;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
