@@ -10,7 +10,7 @@
 .aside .nav li a:hover,
 .aside .nav li a.active {
   color: #ec1839;
-}
+}.btn,
 .section-title h2::before,
 .section-title h2::after,
 .aside .nav-toggle span,
