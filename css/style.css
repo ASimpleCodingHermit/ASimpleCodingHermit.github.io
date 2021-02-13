@@ -366,7 +366,12 @@ a {
 
 .about .about-content .timeline .timeline-item {
   position: relative;
-  padding-left: 30px;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+  padding-bottom: 0;
 }
 
 .about .about-content .timeline .timeline-item::before {
@@ -374,8 +379,18 @@ a {
   width: 1px;
   position: absolute;
   height: 100%;
-  left: 0;
+  left: 7px;
   top: 0;
+}
+
+.about .about-content .timeline .circle-dot {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .about .about-content .timeline .timeline-date {
@@ -409,7 +424,6 @@ a {
   line-height: 25px;
   color: #504e70;
   margin: 0;
-  padding-bottom: 50px;
 }
 
 .about .about-content .about-text {
