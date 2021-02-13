@@ -539,4 +539,70 @@ a {
   text-transform: capitalize;
   margin: 0;
 }
+
+.services .container {
+  padding-bottom: 40px;
+}
+
+.services .service-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 30px;
+}
+
+.services .service-item .service-item-inner {
+  background: #fdf9ff;
+  border: 1px solid #f2f2fc;
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.services .service-item .service-item-inner:hover {
+  -webkit-box-shadow: 0 0 20px #e8dfec;
+          box-shadow: 0 0 20px #e8dfec;
+}
+
+.services .service-item .service-item-inner:hover .icon {
+  background: #ec1839;
+}
+
+.services .service-item .service-item-inner:hover .icon .fa {
+  font-size: 25px;
+  color: #fdf9ff;
+}
+
+.services .service-item .service-item-inner .icon {
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.services .service-item .service-item-inner .icon .fa {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.services .service-item .service-item-inner h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #302e4d;
+  text-transform: capitalize;
+}
+
+.services .service-item .service-item-inner p {
+  font-size: 16px;
+  color: #504e70;
+  line-height: 25px;
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
