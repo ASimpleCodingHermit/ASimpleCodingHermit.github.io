@@ -344,7 +344,7 @@ a {
 
 .about .about-content h3.title {
   font-size: 24px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   font-weight: 700;
   color: #504e70;
 }
@@ -424,6 +424,10 @@ a {
   line-height: 25px;
   color: #504e70;
   margin: 0;
+}
+
+.about .about-content .timeline .timeline-text p {
+  margin: 5px 0;
 }
 
 .about .about-content .about-text {
