@@ -13,6 +13,7 @@
 }
 
 .btn,
+.about .about-content .timeline .timeline-item::before,
 .about .about-content .skills-info .skill-item .progress .progress-in,
 .section-title h2::before,
 .section-title h2::after,
