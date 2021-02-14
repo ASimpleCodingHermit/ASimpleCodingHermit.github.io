@@ -28,6 +28,10 @@
   background-color: #ec1839;
 }
 
+.portfolio .portfolio-item .portfolio-info .icon .fa {
+  color: #ec1839;
+}
+
 .portfolio .portfolio-filter button.active {
   color: #ec1839;
   border-color: #ec1839;
