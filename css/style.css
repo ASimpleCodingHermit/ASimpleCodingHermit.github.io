@@ -754,6 +754,10 @@ a {
   position: absolute;
   height: 40px;
   width: 40px;
+  background: #ec1839;
+  top: -40px;
+  right: 0;
+  font-size: 30px;
 }
 
 .lightbox .lightbox-contents .lightbox-cap {
