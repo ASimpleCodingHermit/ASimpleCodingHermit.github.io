@@ -550,6 +550,9 @@ a {
           flex: 0 0 33.33%;
   max-width: 33.33%;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .services .service-item .service-item-inner {
