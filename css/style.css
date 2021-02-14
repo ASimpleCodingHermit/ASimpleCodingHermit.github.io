@@ -3,40 +3,40 @@
   padding: 0;
   outline: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
 }
 
 ::before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  font-family: 'Montserrat Alternatives', sans-serif;
+  font-family: "Montserrat Alternatives", sans-serif;
 }
 
 input {
   font-size: 16px;
-  font-family: 'Montserrat Alternatives', sans-serif;
+  font-family: "Montserrat Alternatives", sans-serif;
 }
 
 button {
   font-size: 16px;
-  font-family: 'Montserrat Alternatives', sans-serif;
+  font-family: "Montserrat Alternatives", sans-serif;
   cursor: pointer;
 }
 
 .btn {
   font-size: 16px;
-  font-family: 'Montserrat Alternatives', sans-serif;
+  font-family: "Montserrat Alternatives", sans-serif;
   font-weight: 600;
   padding: 12px 35px;
   color: #fdf9ff;
@@ -49,7 +49,7 @@ button {
 
 .btn:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 a {
@@ -69,7 +69,7 @@ a {
 
 .shadow-dark {
   -webkit-box-shadow: 0 0 20px #d4d4e3;
-  box-shadow: 0 0 20px #d4d4e3;
+          box-shadow: 0 0 20px #d4d4e3;
 }
 
 .hidden {
@@ -94,7 +94,7 @@ a {
 
 .aside .logo a {
   font-size: 30px;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   color: #302e4d;
   font-weight: bolder;
   display: inline-block;
@@ -137,12 +137,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: none;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aside .nav-toggle span {
@@ -232,7 +232,7 @@ a {
   font-size: 30px;
   color: #302e4d;
   font-weight: 600;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   margin: 20px 0 10px;
 }
 
@@ -260,7 +260,7 @@ a {
 
 .home .intro .social-link a:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .section {
@@ -277,15 +277,15 @@ a {
 
 .section-title {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 50px;
 }
 
 .section-title h2 {
   font-size: 40px;
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   color: #302e4d;
   font-weight: bolder;
   margin: 0;
@@ -316,7 +316,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
   position: relative;
@@ -330,15 +330,15 @@ a {
 
 .about .about-content .education {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   max-width: 50%;
 }
 
 .about .about-content .experience {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   max-width: 50%;
 }
 
@@ -351,8 +351,8 @@ a {
 
 .about .about-content .timeline-box {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
 }
 
@@ -390,7 +390,7 @@ a {
   top: 0;
   left: 0px;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .about .about-content .timeline .timeline-date {
@@ -432,8 +432,8 @@ a {
 
 .about .about-content .about-text {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
 }
 
@@ -451,8 +451,8 @@ a {
 
 .about .about-content .personal-info {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   max-width: 50%;
   margin-top: 40px;
 }
@@ -468,8 +468,8 @@ a {
 
 .about .about-content .personal-info .info-item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   max-width: 50%;
 }
 
@@ -494,16 +494,16 @@ a {
 
 .about .about-content .skills-info {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   max-width: 50%;
   margin-top: 40px;
 }
 
 .about .about-content .skills-info .skill-item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 5px;
 }
@@ -546,8 +546,8 @@ a {
 
 .services .service-item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.33%;
-  flex: 0 0 33.33%;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
   max-width: 33.33%;
   margin-bottom: 30px;
 }
@@ -564,7 +564,7 @@ a {
 
 .services .service-item .service-item-inner:hover {
   -webkit-box-shadow: 0 0 20px #e8dfec;
-  box-shadow: 0 0 20px #e8dfec;
+          box-shadow: 0 0 20px #e8dfec;
 }
 
 .services .service-item .service-item-inner:hover .icon {
@@ -604,5 +604,53 @@ a {
   color: #504e70;
   line-height: 25px;
   margin: 0;
+}
+
+.portfolio .container {
+  padding-bottom: 40px;
+}
+
+.portfolio .portfolio-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner {
+  border: 6px solid #fdf9ff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item .portfolio-item-inner .portfolio-img img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio .portfolio-filter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.portfolio .portfolio-filter button {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0 10px;
+  color: #504e70;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 /*# sourceMappingURL=style.css.map */
