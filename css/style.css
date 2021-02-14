@@ -736,6 +736,7 @@ a {
           justify-content: center;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
+  padding: 30px;
 }
 
 .lightbox .lightbox-contents {
@@ -754,10 +755,12 @@ a {
   position: absolute;
   height: 40px;
   width: 40px;
-  background: #ec1839;
   top: -40px;
   right: 0;
-  font-size: 30px;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: right;
+  color: #fdf9ff;
 }
 
 .lightbox .lightbox-contents .lightbox-cap {
