@@ -28,5 +28,52 @@ for (let i = 0; i < totalBtns; i++) {
 }
 
 // Portfolio Lightbox Functionality
-const lightbox = document.querySelector('.lightbox');
-const lightboxImg = lightbox.querySelector('.lightbox-img');
+const lightbox = document.querySelector('.lightbox'),
+  lightboxImg = lightbox.querySelector('.lightbox-img'),
+  lightboxText = lightbox.querySelector('.caption-text'),
+  lightboxCounter = lightbox.querySelector('.caption-counter');
+let itemIndex = 0;
+
+for (let i = 0; i < totalPortfolioItems; i++) {
+  portfolioItems[i].addEventListener('click', function () {
+    itemIndex = i;
+    changeItem();
+    toggleLightbox();
+  });
+}
+// Next Item Functionality
+function nextItem() {
+  if (itemIndex == totalPortfolioItems - 1) {
+    itemIndex = 0;
+  } else {
+    itemIndex++;
+  }
+  changeItem();
+  // console.log(itemIndex);
+}
+// Prev Item Functionality
+function prevItem() {
+  if (itemIndex == 0) {
+    itemIndex = totalPortfolioItems - 1;
+  } else {
+    itemIndex--;
+  }
+  changeItem();
+  // console.log(itemIndex);
+}
+
+// Toggle Lightbox
+function toggleLightbox() {
+  lightbox.classList.toggle('open');
+}
+// Change Item Functionality
+function changeItem() {
+  imgSrc = portfolioItems[itemIndex]
+    .querySelector('.portfolio-img img')
+    .getAttribute('src');
+  lightboxImg.src = imgSrc;
+  lightboxText.innerHTML = portfolioItems[itemIndex].querySelector(
+    'h4',
+  ).innerHTML;
+  lightboxCounter.innerHTML = itemIndex + 1 + ' of ' + totalPortfolioItems;
+}
