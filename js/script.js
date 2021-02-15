@@ -30,6 +30,7 @@ for (let i = 0; i < totalBtns; i++) {
 // Portfolio Lightbox Functionality
 const lightbox = document.querySelector('.lightbox'),
   lightboxImg = lightbox.querySelector('.lightbox-img'),
+  lightboxClose = lightbox.querySelector('.close-lb'),
   lightboxText = lightbox.querySelector('.caption-text'),
   lightboxCounter = lightbox.querySelector('.caption-counter');
 let itemIndex = 0;
@@ -77,3 +78,10 @@ function changeItem() {
   ).innerHTML;
   lightboxCounter.innerHTML = itemIndex + 1 + ' of ' + totalPortfolioItems;
 }
+
+// Close Lightbox
+lightbox.addEventListener('click', function (e) {
+  if (e.target === lightboxClose) {
+    toggleLightbox();
+  }
+});
