@@ -76,4 +76,12 @@
 .home .intro .social-link a {
   background-color: #ec1839;
 }
+
+.lightbox .lightbox-controls .prev-item .fa {
+  color: #ec1839;
+}
+
+.lightbox .lightbox-controls .next-item .fa {
+  color: #ec1839;
+}
 /*# sourceMappingURL=pink.css.map */

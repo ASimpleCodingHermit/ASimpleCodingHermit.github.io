@@ -725,9 +725,7 @@ a {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -739,8 +737,64 @@ a {
   padding: 30px;
 }
 
+.lightbox.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lightbox .lightbox-controls .prev-item {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #fdf9ff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 30px;
+  z-index: 110;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lightbox .lightbox-controls .prev-item .fa {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.lightbox .lightbox-controls .prev-item:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.lightbox .lightbox-controls .next-item {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #fdf9ff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  right: 30px;
+  z-index: 110;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lightbox .lightbox-controls .next-item .fa {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.lightbox .lightbox-controls .next-item:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .lightbox .lightbox-contents {
   position: relative;
+  -webkit-animation: lightboxImage .5s ease;
+          animation: lightboxImage .5s ease;
 }
 
 .lightbox .lightbox-contents img {
@@ -777,5 +831,29 @@ a {
   font-size: 16px;
   color: #fff;
   padding: 0px 5px;
+}
+
+@-webkit-keyframes lightboxImage {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lightboxImage {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */
