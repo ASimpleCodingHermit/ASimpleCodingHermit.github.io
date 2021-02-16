@@ -20,23 +20,23 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  font-family: "Montserrat Alternatives", sans-serif;
+  font-family: "Metrophobic", sans-serif;
 }
 
 input {
   font-size: 16px;
-  font-family: "Montserrat Alternatives", sans-serif;
+  font-family: "Metrophobic", sans-serif;
 }
 
 button {
   font-size: 16px;
-  font-family: "Montserrat Alternatives", sans-serif;
+  font-family: "Metrophobic", sans-serif;
   cursor: pointer;
 }
 
 .btn {
   font-size: 16px;
-  font-family: "Montserrat Alternatives", sans-serif;
+  font-family: "Metrophobic", sans-serif;
   font-weight: 600;
   padding: 12px 35px;
   color: #fdf9ff;
@@ -94,7 +94,7 @@ a {
 
 .aside .logo a {
   font-size: 30px;
-  font-family: "Bungee", cursive;
+  font-family: "Permanent Marker", cursive;
   color: #302e4d;
   font-weight: bolder;
   display: inline-block;
@@ -232,7 +232,7 @@ a {
   font-size: 30px;
   color: #302e4d;
   font-weight: 600;
-  font-family: "Bungee", cursive;
+  font-family: "Permanent Marker", cursive;
   margin: 20px 0 10px;
 }
 
@@ -285,7 +285,7 @@ a {
 
 .section-title h2 {
   font-size: 40px;
-  font-family: "Bungee", cursive;
+  font-family: "Permanent Marker", cursive;
   color: #302e4d;
   font-weight: bolder;
   margin: 0;

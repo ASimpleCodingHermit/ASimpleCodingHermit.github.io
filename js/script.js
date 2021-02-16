@@ -69,7 +69,7 @@ function toggleLightbox() {
 }
 // Change Item Functionality
 function changeItem() {
-  imgSrc = portfolioItems[itemIndex]
+ const imgSrc = portfolioItems[itemIndex]
     .querySelector('.portfolio-img img')
     .getAttribute('src');
   lightboxImg.src = imgSrc;
