@@ -84,4 +84,12 @@
 .lightbox .lightbox-controls .next-item .fa {
   color: #ec1839;
 }
+
+.blog .blog-item-inner .blog-img .blog-date {
+  background: #ec1839;
+}
+
+.blog .blog-item-inner .blog-info .blog-tags a {
+  color: #ec1839;
+}
 /*# sourceMappingURL=pink.css.map */
