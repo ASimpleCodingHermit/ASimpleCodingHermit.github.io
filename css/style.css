@@ -45,6 +45,7 @@ button {
   transition: all 0.3s ease-in;
   display: inline-block;
   white-space: nowrap;
+  border: none;
 }
 
 .btn:hover {
@@ -971,5 +972,60 @@ a {
       -ms-flex: 0 0 33.33%;
           flex: 0 0 33.33%;
   max-width: 33.33%;
+}
+
+.contact .contact-form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.contact .contact-form .col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact .contact-form .form-item .form-control {
+  width: 100%;
+}
+
+.contact .contact-form .col-12 {
+  background: #ec1839;
+}
+
+.contact .contact-info-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact .contact-info-item .icon {
+  display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+  font-size: 30px;
+}
+
+.contact .contact-info-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #504e70;
+  text-transform: capitalize;
+  margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #504e70;
+  margin: 0;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
