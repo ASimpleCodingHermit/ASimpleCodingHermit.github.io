@@ -1022,6 +1022,22 @@ a {
           box-shadow: 0 0 20px rgba(38, 36, 61, 0.15);
 }
 
+.contact .contact-form .form-item #name {
+  margin-top: 10px;
+}
+
+.contact .contact-form .form-item #email {
+  margin-top: 10px;
+}
+
+.contact .contact-form .form-item #subject {
+  margin-top: 10px;
+}
+
+.contact .contact-form .form-item #message {
+  margin-top: 10px;
+}
+
 .contact .contact-form .col-12 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;

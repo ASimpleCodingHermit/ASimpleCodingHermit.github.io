@@ -70,8 +70,12 @@
               <h1>Joseph Chu</h1>
               <p>I'm a Web Developer | Designer</p>
               <div class="social-link">
-                <a href="https://www.linkedin.com/in/joseph-chu/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com/ASimpleCodingHermit"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/joseph-chu/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://www.github.com/ASimpleCodingHermit"
+                  ><i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -496,7 +500,7 @@
         <!-- Blog Section End -->
         <!-- Contact Me Section Start -->
         <section class="contact section">
-            <div class="container">
+          <div class="container">
             <div class="row">
               <div class="section-title p-15">
                 <h2>Contact Me</h2>
@@ -507,41 +511,60 @@
               <form class="contact-form p-15">
                 <div class="row">
                   <div class="form-item col-6 p-15">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name*">
-                    </div>
+                    <label for="name" class="p-15">Name:</label>
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      placeholder="Please Enter your Name"
+                    />
                   </div>
                   <div class="form-item col-6 p-15">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email*">
-                    </div>
+                    <label for="email" class="p-15">Email: </label>
+                    <input
+                      type="text"
+                      id="email"
+                      class="form-control"
+                      placeholder="Please Enter your preferred email"
+                    />
                   </div>
-                </div>
-                <div class="row">
-                   <div class="form-item col-12 p-15">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Subject*">
-                    </div>
-                  </div>
-     
                 </div>
                 <div class="row">
                   <div class="form-item col-12 p-15">
-                    <div class="form-group">
-                      <textarea name="comments" type="text" rows="12" cols="35" class="form-control" placeholder="Your message..."></textarea>
-                    </div>
+                    <label for="email" class="p-15">Subject: </label>
+                    <input
+                      type="text"
+                      id="subject"
+                      class="form-control"
+                      placeholder="Enter a Subject"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 p-15">
+                    <label for="email" class="p-15">Message: </label>
+                    <textarea
+                      name="comments"
+                      type="text"
+                      id="message"
+                      rows="12"
+                      cols="35"
+                      class="form-control"
+                      placeholder="Your message..."
+                    ></textarea>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 p-15">
-                    <input type="submit" class="btn" value="Send">
+                    <input type="submit" class="btn" value="Send" />
                   </div>
                 </div>
               </form>
             </div>
-            <!-- Contact Form End-->
-   
+          </div>
         </section>
+        <!-- Contact Form End-->
+
         <!-- Contact Me Section End -->
       </div>
       <!-- Main Content End -->
