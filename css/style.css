@@ -1088,5 +1088,17 @@ a {
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .about .about-content .education {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .experience {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
