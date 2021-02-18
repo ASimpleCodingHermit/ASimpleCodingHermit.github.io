@@ -1075,6 +1075,15 @@ a {
   }
 }
 
+@media (max-width: 996px) {
+  .services .service-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
 @media (max-width: 768px) {
   .about .about-content .skills-info {
     -webkit-box-flex: 0;
