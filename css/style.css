@@ -1073,6 +1073,9 @@ a {
     display: block;
     margin-left: 0;
   }
+  .portfolio-img img {
+    width: 390px;
+  }
 }
 
 @media (max-width: 996px) {
@@ -1081,6 +1084,9 @@ a {
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
     max-width: 50%;
+  }
+  .portfolio-img img {
+    width: 280px;
   }
 }
 
@@ -1108,6 +1114,9 @@ a {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
+  }
+  .portfolio-img img {
+    width: 204px;
   }
 }
 /*# sourceMappingURL=style.css.map */
