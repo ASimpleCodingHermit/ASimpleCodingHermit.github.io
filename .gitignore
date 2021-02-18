@@ -3,3 +3,5 @@ css/style.css.map
 css/pink.css.map
 node_modules/
 tsconfig.json
+purified.css
+purifyMyCss.js
