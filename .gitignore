@@ -1,6 +1,6 @@
 scss
-css/style.css.map
-css/pink.css.map
+src/css/style.css.map
+src/css/pink.css.map
 node_modules/
 tsconfig.json
 purified.css
