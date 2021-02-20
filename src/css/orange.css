@@ -1,99 +1,99 @@
 .aside .logo a::before {
-  border-top: 4px solid #2196f3;
-  border-left: 4px solid #2196f3;
+  border-top: 4px solid #fa5b0f;
+  border-left: 4px solid #fa5b0f;
 }
 
 .aside .logo a::after {
-  border-bottom: 4px solid #2196f3;
-  border-right: 4px solid #2196f3;
+  border-bottom: 4px solid #fa5b0f;
+  border-right: 4px solid #fa5b0f;
 }
 
 .aside .nav li a:hover {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .aside .nav li a.active {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .aside .nav-toggle span {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .aside .nav-toggle span::before {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .aside .nav-toggle span::after {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .portfolio .portfolio-item .portfolio-info .icon .fa {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .portfolio .portfolio-filter button.active {
-  color: #2196f3;
-  border-color: #2196f3;
+  color: #fa5b0f;
+  border-color: #fa5b0f;
 }
 
 .services .service-item .service-item-inner .icon .fa {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .services .service-item .service-item-inner::hover .icon {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .about .about-content .about-text h3 span {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .about .about-content .timeline .circle-dot {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .about .about-content .timeline .timeline-item::before {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .about .about-content .skills-info .skill-item .progress .progress-in {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .btn {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .section-title h2::before {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .section-title h2::after {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .home .intro .social-link a {
-  background-color: #2196f3;
+  background-color: #fa5b0f;
 }
 
 .lightbox .lightbox-controls .prev-item .fa {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .lightbox .lightbox-controls .next-item .fa {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .blog .blog-item-inner .blog-img .blog-date {
-  background: #2196f3;
+  background: #fa5b0f;
 }
 
 .blog .blog-item-inner .blog-info .blog-tags a {
-  color: #2196f3;
+  color: #fa5b0f;
 }
 
 .contact .contact-info-item .icon .fa {
-  color: #2196f3;
+  color: #fa5b0f;
 }
-/*# sourceMappingURL=blue.css.map */
+/*# sourceMappingURL=orange.css.map */
