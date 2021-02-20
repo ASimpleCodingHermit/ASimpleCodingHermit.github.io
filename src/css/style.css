@@ -1408,6 +1408,12 @@ body.dark .contact .contact-form .form-item label {
   color: #e9e9e9;
 }
 
+body.dark .contact .contact-form .form-item .form-control {
+  background: #222;
+  color: #e9e9e9;
+  border-color: #393939;
+}
+
 body.dark .theme-switcher {
   background: #222;
   border-color: #393939;
