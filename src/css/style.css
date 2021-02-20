@@ -1363,6 +1363,11 @@ body.dark .services .service-item .service-item-inner {
   border-color: #393939;
 }
 
+body.dark .services .service-item .service-item-inner:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 body.dark .services .service-item .service-item-inner h4 {
   color: #e9e9e9;
 }
