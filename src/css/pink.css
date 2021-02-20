@@ -6,6 +6,10 @@ body.dark .aside .nav li a:hover {
   color: #ec1839;
 }
 
+body.dark .portfolio .portfolio-filter button.active {
+  color: #ec1839;
+}
+
 .aside .logo a::before {
   border-top: 4px solid #ec1839;
   border-left: 4px solid #ec1839;
