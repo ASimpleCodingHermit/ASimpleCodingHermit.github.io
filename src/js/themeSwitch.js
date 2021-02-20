@@ -11,6 +11,19 @@ const setActiveStyle = (color) => {
   }
 };
 
+// Skin Change
+const skinChange = document.querySelectorAll('.theme-skin'),
+  totalSkinChange = skinChange.length;
+for (let i = 0; i < totalSkinChange; i++) {
+  skinChange[i].addEventListener('change', function () {
+    if (this.value === 'dark') {
+      document.body.className = 'dark';
+    } else {
+      document.body.className = '';
+    }
+  });
+}
+
 document.querySelector('.theme-toggle').addEventListener('click', () => {
   document.querySelector('.theme-switcher').classList.toggle('open');
 });
