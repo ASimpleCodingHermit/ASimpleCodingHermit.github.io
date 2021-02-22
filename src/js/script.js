@@ -1,12 +1,3 @@
-window.addEventListener('load', function () {
-  document.querySelector('.preloader').classList.add('opacity-0');
-  // removing arrow function
-  setTimeout(() => {
-    document.querySelector('.preloader').style.display = 'none';
-  }, 1000);
-});
-
-// Portfolio Item Filter
 const filterContainer = document.querySelector('.portfolio-filter');
 const filterBtns = filterContainer.children;
 const totalBtns = filterBtns.length;
@@ -105,13 +96,11 @@ for (let i = 0; i < totalNavList; i++) {
   const a = navList[i].querySelector('a');
   a.addEventListener('click', function () {
     // Remove Prev Section Class
-    for (let i = 0; i < totalSection; i++) {
-      allSection[i].classList.remove('prev-section');
-    }
+    removeBackSectionClass();
     for (let j = 0; j < totalNavList; j++) {
       if (navList[j].querySelector('a').classList.contains('active')) {
         // Add Prev Section Class
-        allSection[j].classList.add('prev-section');
+        addBackSectionClass(j);
       }
       navList[j].querySelector('a').classList.remove('active');
     }
@@ -119,6 +108,16 @@ for (let i = 0; i < totalNavList; i++) {
 
     showSection(this);
   });
+}
+
+function removeBackSectionClass() {
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.remove('prev-section');
+  }
+}
+
+function addBackSectionClass(num) {
+  allSection[num].classList.add('prev-section');
 }
 
 // Function showSection has the element argument. target is equal to element getting the attribute and splitting it from the id(#)
@@ -133,7 +132,10 @@ function updateNav(element) {
   for (let i = 0; i < totalNavList; i++) {
     navList[i].querySelector('a').classList.remove('active');
     const target = element.getAttribute('href').split('#')[1];
-    if(target === navList[i].querySelector('a').getAttribute('href').split('#')[1]){
+    if (
+      target ===
+      navList[i].querySelector('a').getAttribute('href').split('#')[1]
+    ) {
       navList[i].querySelector('a').classList.add('active');
     }
   }
@@ -141,8 +143,12 @@ function updateNav(element) {
 }
 //
 document.querySelector('.hire-me').addEventListener('click', function () {
+  const sectionIndex = this.getAttribute('data-section-index');
+  // console.log(sectionIndex);
   showSection(this);
   updateNav(this);
+  removeBackSectionClass();
+  addBackSectionClass(sectionIndex);
 });
 
 // Navigation Toggle

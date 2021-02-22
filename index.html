@@ -59,13 +59,6 @@
     <title>LostCode</title>
   </head>
   <body>
-    <!-- Preloader Start -->
-    <div class="preloader">
-      <div class="loader">
-        
-      </div>
-    </div>
-    <!-- Preloader End -->
     <!-- Main Container -->
     <div class="main-container">
       <!-- Aside -->
@@ -100,13 +93,13 @@
           </li>
         </ul>
         <!-- Copyright -->
-        <div class="copyright-text">&copy; 2021 Lost Code</div>
+        <div class="copyright-text">2021 Lost Code</div>
       </div>
       <!-- Aside End -->
       <!-- Main Content Start -->
       <div class="main-content">
         <!-- Home Section Start-->
-        <section class="home section" id="home">
+        <section class="home section active" id="home">
           <div class="container">
             <div class="intro">
               <img
@@ -177,7 +170,12 @@
                     <div class="row">
                       <div class="buttons p-15">
                         <a href="#" class="btn">Download CV</a>
-                        <a href="#contact" data-section-index='1' class="btn hire-me">Hire Me</a>
+                        <a
+                          href="#contact"
+                          data-section-index="1"
+                          class="btn hire-me"
+                          >Hire Me</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -634,74 +632,6 @@
       </div>
     </div>
     <!-- Light Box End -->
-
-    <!-- Theme Switcher Demo Only -->
-    <div class="theme-switcher">
-      <div class="theme-toggle">
-        <i class="fa fa-cog fa-spin"></i>
-      </div>
-      <h5>Theme</h5>
-      <ul>
-        <li>
-          <a
-            href="javascript:void(0);"
-            title="pink"
-            id="style-p"
-            onclick="setActiveStyle('pink')"
-          ></a>
-        </li>
-        <li>
-          <a
-            href="javascript:void(0);"
-            title="blue"
-            id="style-b"
-            onclick="setActiveStyle('blue')"
-          ></a>
-        </li>
-        <li>
-          <a
-            href="javascript:void(0);"
-            title="orange"
-            id="style-o"
-            onclick="setActiveStyle('orange')"
-          ></a>
-        </li>
-        <li>
-          <a
-            href="javascript:void(0);"
-            title="green"
-            id="style-g"
-            onclick="setActiveStyle('green')"
-          ></a>
-        </li>
-        <li>
-          <a
-            href="javascript:void(0);"
-            title="yellow"
-            id="style-y"
-            onclick="setActiveStyle('yellow')"
-          ></a>
-        </li>
-      </ul>
-      <h5>Dark | Light</h5>
-      <input
-        type="radio"
-        name="theme"
-        class="theme-skin"
-        checked="true"
-        value="light"
-      /><label for="switch">Light</label>
-      <input type="radio" name="theme" class="theme-skin" value="dark" /><label
-        for="switch"
-        >Dark</label
-      >
-    </div>
-    <!-- Theme Switcher Demo Only End-->
-
     <!-- Custom Javascript -->
     <script await src="src/js/script.js"></script>
-
-    <!-- Theme Switch Demo Only -->
-    <script await src="src/js/themeSwitch.js"></script>
-  </body>
 </html>
