@@ -1,3 +1,11 @@
+window.addEventListener('load', function () {
+  document.querySelector('.preloader').classList.add('opacity-0');
+  // removing arrow function
+  setTimeout(() => {
+    document.querySelector('.preloader').style.display = 'none';
+  }, 1000);
+});
+
 // Portfolio Item Filter
 const filterContainer = document.querySelector('.portfolio-filter');
 const filterBtns = filterContainer.children;
@@ -85,3 +93,69 @@ lightbox.addEventListener('click', function (e) {
     toggleLightbox();
   }
 });
+
+// Aside Navigation
+const nav = document.querySelector('.nav'),
+  navList = nav.querySelectorAll('li'),
+  totalNavList = navList.length,
+  allSection = document.querySelectorAll('.section'),
+  totalSection = allSection.length;
+
+for (let i = 0; i < totalNavList; i++) {
+  const a = navList[i].querySelector('a');
+  a.addEventListener('click', function () {
+    // Remove Prev Section Class
+    for (let i = 0; i < totalSection; i++) {
+      allSection[i].classList.remove('prev-section');
+    }
+    for (let j = 0; j < totalNavList; j++) {
+      if (navList[j].querySelector('a').classList.contains('active')) {
+        // Add Prev Section Class
+        allSection[j].classList.add('prev-section');
+      }
+      navList[j].querySelector('a').classList.remove('active');
+    }
+    this.classList.add('active');
+
+    showSection(this);
+  });
+}
+
+// Function showSection has the element argument. target is equal to element getting the attribute and splitting it from the id(#)
+function showSection(element) {
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.remove('active');
+  }
+  const target = element.getAttribute('href').split('#')[1];
+  document.querySelector('#' + target).classList.add('active');
+}
+function updateNav(element) {
+  for (let i = 0; i < totalNavList; i++) {
+    navList[i].querySelector('a').classList.remove('active');
+    const target = element.getAttribute('href').split('#')[1];
+    if(target === navList[i].querySelector('a').getAttribute('href').split('#')[1]){
+      navList[i].querySelector('a').classList.add('active');
+    }
+  }
+  //
+}
+//
+document.querySelector('.hire-me').addEventListener('click', function () {
+  showSection(this);
+  updateNav(this);
+});
+
+// Navigation Toggle
+const navToggleBtn = document.querySelector('.nav-toggle'),
+  aside = document.querySelector('.aside');
+navToggleBtn.addEventListener('click', () => {
+  asideSectionToggleBtn();
+});
+
+function asideSectionToggleBtn() {
+  aside.classList.toggle('open');
+  navToggleBtn.classList.toggle('open');
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.toggle('open');
+  }
+}
