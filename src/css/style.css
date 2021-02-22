@@ -35,8 +35,8 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   opacity: 1;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .section.prev.section {
@@ -45,30 +45,6 @@ body {
 
 .section.active {
   z-index: 2;
-  -webkit-animation: slideSection 1s ease;
-          animation: slideSection 1s ease;
-}
-
-@-webkit-keyframes slideSection {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
-@keyframes slideSection {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
 }
 
 .section .container {
